@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Regression(failed)">
-    <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="Regression"/>
-      </run>
-    </groups>
+  <listeners>
+    <listener class-name="com.mystore.utility.ListenersClass"/>
+  </listeners>
+  <test thread-count="5" name="Test_All(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.mystore.testcases.OrderPageTest">
+      <class name="com.mystore.testcases.AccountCreationPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="VerifyTotalPrice"/>
+          <include name="verifyAccntCreationPageTest"/>
           <include name="teardownTest"/>
+          <include name="setup"/>
+          <include name="afterSuite"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- com.mystore.testcases.OrderPageTest -->
+      </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
+      <class name="com.mystore.testcases.EndToEndTest">
+        <methods>
+          <include name="teardownTest"/>
+          <include name="afterSuite"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="endToEnd"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.EndToEndTest -->
       <class name="com.mystore.testcases.AddToCartPageTest">
         <methods>
           <include name="setup"/>
           <include name="AddToCartTest"/>
+          <include name="afterSuite"/>
           <include name="loadConfig"/>
           <include name="teardownTest"/>
         </methods>
       </class> <!-- com.mystore.testcases.AddToCartPageTest -->
     </classes>
-  </test> <!-- Regression(failed) -->
+  </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->

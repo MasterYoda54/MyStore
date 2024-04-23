@@ -4,6 +4,8 @@
 package com.mystore.testcases;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -52,7 +54,7 @@ public class AddToCartPageTest extends BasePage{
 		//addToCartPage=searchResultPage.clickOnProdcut();
 		addToCartPage.addToCart();
 		boolean result1=addToCartPage.vlidateAddTo();
-        Assert.assertTrue(result1);
+        AssertJUnit.assertTrue(result1);
 		
 		
 	}

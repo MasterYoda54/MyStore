@@ -1,53 +1,284 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-22T17:54:04 IST" name="Suite" finished-at="2024-04-22T17:56:03 IST" duration-ms="118663">
+  <suite started-at="2024-04-23T14:42:36 IST" name="Suite" finished-at="2024-04-23T14:45:07 IST" duration-ms="150947">
     <groups>
       <group name="Sanity">
-        <method signature="AddToCartPageTest.AddToCartTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@dd8ba08]" name="AddToCartTest" class="com.mystore.testcases.AddToCartPageTest"/>
+        <method signature="AccountCreationPageTest.verifyAccntCreationPageTest()[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6c80d78a]" name="verifyAccntCreationPageTest" class="com.mystore.testcases.AccountCreationPageTest"/>
+        <method signature="AddToCartPageTest.AddToCartTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@15ff3e9e]" name="AddToCartTest" class="com.mystore.testcases.AddToCartPageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="AddToCartPageTest.AddToCartTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@dd8ba08]" name="AddToCartTest" class="com.mystore.testcases.AddToCartPageTest"/>
-        <method signature="EndToEndTest.endToEnd()[pri:0, instance:com.mystore.testcases.EndToEndTest@6b81ce95]" name="endToEnd" class="com.mystore.testcases.EndToEndTest"/>
-        <method signature="OrderPageTest.VerifyTotalPrice()[pri:0, instance:com.mystore.testcases.OrderPageTest@515aebb0]" name="VerifyTotalPrice" class="com.mystore.testcases.OrderPageTest"/>
+        <method signature="AddToCartPageTest.AddToCartTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@15ff3e9e]" name="AddToCartTest" class="com.mystore.testcases.AddToCartPageTest"/>
+        <method signature="EndToEndTest.endToEnd()[pri:0, instance:com.mystore.testcases.EndToEndTest@14dd9eb7]" name="endToEnd" class="com.mystore.testcases.EndToEndTest"/>
+        <method signature="OrderPageTest.VerifyTotalPrice()[pri:0, instance:com.mystore.testcases.OrderPageTest@7fa98a66]" name="VerifyTotalPrice" class="com.mystore.testcases.OrderPageTest"/>
       </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="AccountPageTest.OrderHistoryTest()[pri:0, instance:com.mystore.testcases.AccountPageTest@1a451d4d]" name="OrderHistoryTest" class="com.mystore.testcases.AccountPageTest"/>
+        <method signature="IndexPageTest.validateLogoTest()[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" name="validateLogoTest" class="com.mystore.testcases.IndexPageTest"/>
+        <method signature="IndexPageTest.verifyTitleTest()[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" name="verifyTitleTest" class="com.mystore.testcases.IndexPageTest"/>
+        <method signature="SearchResultPageTest.productAvailabilityTest()[pri:0, instance:com.mystore.testcases.SearchResultPageTest@62150f9e]" name="productAvailabilityTest" class="com.mystore.testcases.SearchResultPageTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-22T17:54:04 IST" name="Regression" finished-at="2024-04-22T17:56:03 IST" duration-ms="118663">
-      <class name="com.mystore.testcases.EndToEndTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.EndToEndTest@6b81ce95]" started-at="2024-04-22T17:54:04 IST" name="setup" finished-at="2024-04-22T17:54:22 IST" duration-ms="17372" status="PASS">
+    <test started-at="2024-04-23T14:42:36 IST" name="Test_All" finished-at="2024-04-23T14:45:07 IST" duration-ms="150947">
+      <class name="com.mystore.testcases.AccountCreationPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6c80d78a]" started-at="2024-04-23T14:43:54 IST" name="setup" finished-at="2024-04-23T14:43:58 IST" duration-ms="4175" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="endToEnd()[pri:0, instance:com.mystore.testcases.EndToEndTest@6b81ce95]" started-at="2024-04-22T17:54:22 IST" name="endToEnd" finished-at="2024-04-22T17:55:17 IST" duration-ms="55123" status="PASS">
+        <test-method signature="verifyAccntCreationPageTest()[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6c80d78a]" started-at="2024-04-23T14:43:58 IST" name="verifyAccntCreationPageTest" finished-at="2024-04-23T14:44:04 IST" duration-ms="6034" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+at com.mystore.testcases.AccountCreationPageTest.verifyAccntCreationPageTest(AccountCreationPageTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccntCreationPageTest -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6c80d78a]" started-at="2024-04-23T14:44:05 IST" name="teardownTest" finished-at="2024-04-23T14:44:05 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
+      <class name="com.mystore.testcases.AccountPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.AccountPageTest@1a451d4d]" started-at="2024-04-23T14:44:15 IST" name="setup" finished-at="2024-04-23T14:44:22 IST" duration-ms="7269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:com.mystore.testcases.AccountPageTest@1a451d4d]" started-at="2024-04-23T14:44:22 IST" name="OrderHistoryTest" finished-at="2024-04-23T14:44:26 IST" duration-ms="4174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.AccountPageTest@1a451d4d]" started-at="2024-04-23T14:44:26 IST" name="teardownTest" finished-at="2024-04-23T14:44:26 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- com.mystore.testcases.AccountPageTest -->
+      <class name="com.mystore.testcases.EndToEndTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.EndToEndTest@14dd9eb7]" started-at="2024-04-23T14:43:04 IST" name="setup" finished-at="2024-04-23T14:43:14 IST" duration-ms="10295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="endToEnd()[pri:0, instance:com.mystore.testcases.EndToEndTest@14dd9eb7]" started-at="2024-04-23T14:43:14 IST" name="endToEnd" finished-at="2024-04-23T14:43:34 IST" duration-ms="20114" status="FAIL">
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e126f807becef8e65e59b2b860f627f5, actions {actions=[org.openqa.selenium.interactions.Sequence@79b663b3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50528}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50528/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e126f807becef8e65e59b2b860f627f5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e126f807becef8e65e59b2b860f627f5, actions {actions=[org.openqa.selenium.interactions.Sequence@79b663b3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50528}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50528/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e126f807becef8e65e59b2b860f627f5
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
+at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
+at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
+at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
+at java.base/java.util.Map.forEach(Map.java:733)
+at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
+at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
+at org.openqa.selenium.json.Json.toJson(Json.java:133)
+at org.openqa.selenium.json.Json.toJson(Json.java:119)
+at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
+at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
+at com.mystore.actiondriver.Actiondriver.click(Actiondriver.java:35)
+at com.mystore.pageobjects.IndexPage.searchproduct(IndexPage.java:54)
+at com.mystore.testcases.EndToEndTest.endToEnd(EndToEndTest.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
+at org.openqa.selenium.json.Json.toJson(Json.java:131)
+... 38 more
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
+... 59 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-default button-search']"}
+  (Session info: chrome=124.0.6367.62)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e126f807becef8e65e59b2b860f627f5, findElement {value=//button[@class='btn btn-default button-search'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50528}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50528/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e126f807becef8e65e59b2b860f627f5
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
+at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:259)
+at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:208)
+at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
+at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+... 61 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToEnd -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.EndToEndTest@6b81ce95]" started-at="2024-04-22T17:55:17 IST" name="teardownTest" finished-at="2024-04-22T17:55:17 IST" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.EndToEndTest@14dd9eb7]" started-at="2024-04-23T14:43:35 IST" name="teardownTest" finished-at="2024-04-23T14:43:35 IST" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
       </class> <!-- com.mystore.testcases.EndToEndTest -->
-      <class name="com.mystore.testcases.AddToCartPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartPageTest@dd8ba08]" started-at="2024-04-22T17:55:41 IST" name="setup" finished-at="2024-04-22T17:55:48 IST" duration-ms="7124" status="PASS">
+      <class name="com.mystore.testcases.SearchResultPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.SearchResultPageTest@62150f9e]" started-at="2024-04-23T14:44:05 IST" name="setup" finished-at="2024-04-23T14:44:09 IST" duration-ms="4066" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AddToCartTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@dd8ba08]" started-at="2024-04-22T17:55:48 IST" name="AddToCartTest" finished-at="2024-04-22T17:56:03 IST" duration-ms="14167" status="FAIL">
+        <test-method signature="productAvailabilityTest()[pri:0, instance:com.mystore.testcases.SearchResultPageTest@62150f9e]" started-at="2024-04-23T14:44:09 IST" name="productAvailabilityTest" finished-at="2024-04-23T14:44:14 IST" duration-ms="5361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productAvailabilityTest -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.SearchResultPageTest@62150f9e]" started-at="2024-04-23T14:44:14 IST" name="teardownTest" finished-at="2024-04-23T14:44:15 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- com.mystore.testcases.SearchResultPageTest -->
+      <class name="com.mystore.testcases.AddToCartPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartPageTest@15ff3e9e]" started-at="2024-04-23T14:44:54 IST" name="setup" finished-at="2024-04-23T14:45:01 IST" duration-ms="7617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddToCartTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@15ff3e9e]" started-at="2024-04-23T14:45:01 IST" name="AddToCartTest" finished-at="2024-04-23T14:45:06 IST" duration-ms="5056" status="FAIL">
           <exception class="org.openqa.selenium.JavascriptException">
             <message>
               <![CDATA[javascript error: {"status":60,"value":"[object HTMLSpanElement] has no size and location"}
@@ -55,9 +286,9 @@
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c37370a77c8c71b06c295348910a4474, actions {actions=[org.openqa.selenium.interactions.Sequence@4f966719]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49757/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c37370a77c8c71b06c295348910a4474]]>
+Command: [06c74be22d56f9006891724a68e1d149, actions {actions=[org.openqa.selenium.interactions.Sequence@7b676112]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50705/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06c74be22d56f9006891724a68e1d149]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":60,"value":"[object HTMLSpanElement] has no size and location"}
@@ -65,9 +296,9 @@ Session ID: c37370a77c8c71b06c295348910a4474]]>
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c37370a77c8c71b06c295348910a4474, actions {actions=[org.openqa.selenium.interactions.Sequence@4f966719]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49757/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c37370a77c8c71b06c295348910a4474
+Command: [06c74be22d56f9006891724a68e1d149, actions {actions=[org.openqa.selenium.interactions.Sequence@7b676112]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50705/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06c74be22d56f9006891724a68e1d149
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -82,30 +313,30 @@ at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
 at com.mystore.actiondriver.Actiondriver.click(Actiondriver.java:35)
 at com.mystore.pageobjects.AddToCartPage.addToCart(AddToCartPage.java:63)
-at com.mystore.testcases.AddToCartPageTest.AddToCartTest(AddToCartPageTest.java:53)
+at com.mystore.testcases.AddToCartPageTest.AddToCartTest(AddToCartPageTest.java:55)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
 at org.testng.SuiteRunner.run(SuiteRunner.java:336)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -115,102 +346,101 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCartTest -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@dd8ba08]" started-at="2024-04-22T17:56:03 IST" name="teardownTest" finished-at="2024-04-22T17:56:03 IST" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@15ff3e9e]" started-at="2024-04-23T14:45:07 IST" name="teardownTest" finished-at="2024-04-23T14:45:07 IST" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
       </class> <!-- com.mystore.testcases.AddToCartPageTest -->
-      <class name="com.mystore.testcases.OrderPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.OrderPageTest@515aebb0]" started-at="2024-04-22T17:55:17 IST" name="setup" finished-at="2024-04-22T17:55:25 IST" duration-ms="7627" status="PASS">
+      <class name="com.mystore.testcases.IndexPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" started-at="2024-04-23T14:43:35 IST" name="setup" finished-at="2024-04-23T14:43:45 IST" duration-ms="9806" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyTotalPrice()[pri:0, instance:com.mystore.testcases.OrderPageTest@515aebb0]" started-at="2024-04-22T17:55:25 IST" name="VerifyTotalPrice" finished-at="2024-04-22T17:55:41 IST" duration-ms="16280" status="FAIL">
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: {"status":60,"value":"[object HTMLSpanElement] has no size and location"}
-  (Session info: chrome=124.0.6367.62)
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a1c1e946445672ee8cd46a1360a90d45, actions {actions=[org.openqa.selenium.interactions.Sequence@287f7811]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49730/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a1c1e946445672ee8cd46a1360a90d45]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":60,"value":"[object HTMLSpanElement] has no size and location"}
-  (Session info: chrome=124.0.6367.62)
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.10', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a1c1e946445672ee8cd46a1360a90d45, actions {actions=[org.openqa.selenium.interactions.Sequence@287f7811]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.62, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: /var/folders/xd/8_2mrxdj643...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49730}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49730/devtoo..., se:cdpVersion: 124.0.6367.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a1c1e946445672ee8cd46a1360a90d45
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-at com.mystore.actiondriver.Actiondriver.click(Actiondriver.java:35)
-at com.mystore.pageobjects.AddToCartPage.addToCart(AddToCartPage.java:63)
-at com.mystore.testcases.OrderPageTest.VerifyTotalPrice(OrderPageTest.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+        <test-method signature="validateLogoTest()[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" started-at="2024-04-23T14:43:45 IST" name="validateLogoTest" finished-at="2024-04-23T14:43:45 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoTest -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" started-at="2024-04-23T14:43:45 IST" name="teardownTest" finished-at="2024-04-23T14:43:46 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" started-at="2024-04-23T14:43:46 IST" name="setup" finished-at="2024-04-23T14:43:54 IST" duration-ms="7909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTitleTest()[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" started-at="2024-04-23T14:43:54 IST" name="verifyTitleTest" finished-at="2024-04-23T14:43:54 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleTest -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.IndexPageTest@52e6fdee]" started-at="2024-04-23T14:43:54 IST" name="teardownTest" finished-at="2024-04-23T14:43:54 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- com.mystore.testcases.IndexPageTest -->
+      <class name="com.mystore.testcases.OrderPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.OrderPageTest@7fa98a66]" started-at="2024-04-23T14:44:26 IST" name="setup" finished-at="2024-04-23T14:44:34 IST" duration-ms="8049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyTotalPrice()[pri:0, instance:com.mystore.testcases.OrderPageTest@7fa98a66]" started-at="2024-04-23T14:44:34 IST" name="VerifyTotalPrice" finished-at="2024-04-23T14:44:54 IST" duration-ms="19142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTotalPrice -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.OrderPageTest@515aebb0]" started-at="2024-04-22T17:55:41 IST" name="teardownTest" finished-at="2024-04-22T17:55:41 IST" duration-ms="218" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.OrderPageTest@7fa98a66]" started-at="2024-04-23T14:44:54 IST" name="teardownTest" finished-at="2024-04-23T14:44:54 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
       </class> <!-- com.mystore.testcases.OrderPageTest -->
       <class name="com.mystore.testcases.LoginPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.LoginPageTest@67d48005]" started-at="2024-04-22T17:54:04 IST" name="loadConfig" finished-at="2024-04-22T17:54:04 IST" duration-ms="542" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.LoginPageTest@123ef382]" started-at="2024-04-23T14:42:36 IST" name="loadConfig" finished-at="2024-04-23T14:42:36 IST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.LoginPageTest@123ef382]" started-at="2024-04-23T14:42:36 IST" name="setup" finished-at="2024-04-23T14:42:56 IST" duration-ms="19935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginTest()[pri:0, instance:com.mystore.testcases.LoginPageTest@123ef382]" started-at="2024-04-23T14:42:56 IST" name="LoginTest" finished-at="2024-04-23T14:43:04 IST" duration-ms="7429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.mystore.testcases.LoginPageTest@123ef382]" started-at="2024-04-23T14:43:04 IST" name="teardownTest" finished-at="2024-04-23T14:43:04 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mystore.testcases.LoginPageTest@123ef382]" started-at="2024-04-23T14:45:07 IST" name="afterSuite" finished-at="2024-04-23T14:45:08 IST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- com.mystore.testcases.LoginPageTest -->
-    </test> <!-- Regression -->
+    </test> <!-- Test_All -->
   </suite> <!-- Suite -->
 </testng-results>

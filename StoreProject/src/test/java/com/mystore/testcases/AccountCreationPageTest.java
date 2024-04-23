@@ -5,6 +5,8 @@ package com.mystore.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -41,7 +43,7 @@ public class AccountCreationPageTest extends BasePage {
 		loginPage=indexPage.clickOnSignIn();
 		accountCreationPage=loginPage.createAccnt("dota@gmail.com");
 		boolean result=accountCreationPage.validatePageHeader();
-		Assert.assertTrue(result);
+		AssertJUnit.assertTrue(result);
 		
 	}
 	
